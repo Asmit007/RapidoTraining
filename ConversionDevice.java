@@ -7,10 +7,10 @@ public class ConversionDevice {
 
         int inputValue = 1 ;
 
-        while(inputValue!=3){  // this loop will terminate once the user enters 4 as input
+        while(inputValue!=4){  // this loop will terminate once the user enters 4 as input
 
             System.out.println("\nCHOOSE CONVERSION SYSTEM : ");
-            System.out.println("1.FEET TO INCH\t 2.YARD TO FEET\t 3.EXIT");
+            System.out.println("1.FEET TO INCH\t 2.YARD TO FEET\t  3.INCH TO YARD\t 4.EXIT");
             inputValue = sc.nextInt() ;
 
             switch(inputValue){
@@ -28,6 +28,14 @@ public class ConversionDevice {
                     float yardInput = sc.nextFloat() ;
                     float YardToFeet = utils.yardToFeet(yardInput) ;
                     System.out.println(yardInput + " feet = " + YardToFeet + " yard" );
+                    break ;
+                }
+
+                case 3:{
+                    System.out.print("Enter Inches : ");
+                    float inchInput = sc.nextFloat() ;
+                    float inchToYard = utils.inchToYard(inchInput) ;
+                    System.out.println(inchInput + " feet = " + inchToYard + " yard" );
                     break ;
                 }
 
