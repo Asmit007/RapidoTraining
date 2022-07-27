@@ -39,4 +39,13 @@ public class TestFizzBuzz {
         assertEquals(expectedOutput, "FizzBuzz");
     }
 
+    @Test
+    public void shouldReturnEmpytStringForInput4()
+    {
+        int input = 4 ;
+        String expectedOutput = fizzBuzz.fizzBuzzAnswer(input) ;
+
+        assertEquals(expectedOutput, "Not a FizzBuzz");
+    }
+
 }
