@@ -13,39 +13,40 @@ public class TestFizzBuzz {
     }
 
     @Test
-    public void shouldReturnFizzForInput3()
+    public void shouldReturnFizzForInputDivisibleOnlyBy3()
     {
         int input = 3 ;
-        String expectedOutput = fizzBuzz.fizzBuzzAnswer(input) ;
+        String actual = fizzBuzz.fizzBuzzAnswer(input) ;
 
-        assertEquals(expectedOutput, "Fizz");
+        assertEquals("Fizz",actual);
     }
 
     @Test
-    public void shouldReturnBuzzForInput5()
+    public void shouldReturnBuzzForInputDivisibleOnlyBy5()
     {
         int input = 5 ;
-        String expectedOutput = fizzBuzz.fizzBuzzAnswer(input) ;
+        String actual = fizzBuzz.fizzBuzzAnswer(input) ;
 
-        assertEquals(expectedOutput, "Buzz");
+        assertEquals( "Buzz", actual);
     }
 
     @Test
-    public void shouldReturnFizzBuzzForInput15()
+    public void shouldReturnFizzBuzzForInputDivisibleByBoth3and5()
     {
         int input = 15 ;
-        String expectedOutput = fizzBuzz.fizzBuzzAnswer(input) ;
+        String actual = fizzBuzz.fizzBuzzAnswer(input) ;
 
-        assertEquals(expectedOutput, "FizzBuzz");
+        assertEquals("FizzBuzz", actual);
     }
 
     @Test
-    public void shouldReturnEmpytStringForInput4()
+    public void shouldReturnEmptyStringForAllOtherNumbers()
     {
         int input = 4 ;
-        String expectedOutput = fizzBuzz.fizzBuzzAnswer(input) ;
+        String actual = fizzBuzz.fizzBuzzAnswer(input) ;
 
-        assertEquals(expectedOutput, "Not a FizzBuzz");
+        assertEquals("________", actual);
     }
+
 
 }
